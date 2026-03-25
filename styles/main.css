@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "BebasNeue";
+    src: url(/styles/components/fonts/Bebas_Neue/BebasNeue-Regular.ttf)
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/styles/components/fonts/Montserrat/Montserrat-VariableFont_wght.ttf)
+}
 
 * {
     box-sizing: border-box;
@@ -8,6 +17,7 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-rows: 8vh auto;
+    font-family: 'Montserrat', sans-serif;
     /*
     display: flex;
     flex-direction: column;
@@ -96,10 +106,12 @@ a:link {
 
     .hero__title { 
         margin: 0;
-        font-size: clamp(2.5rem, 7vh, 6rem);
+        font-family: 'BebasNeue', sans-serif;
+        font-size: clamp(4rem, 12vw, 12rem);
+        width: 100%;
         color: white;  
-        font-weight: bold;
-        line-height: 1;
+        letter-spacing: 4px;
+        line-height: 0.9;
     }
 
     .hero__action {
@@ -126,7 +138,7 @@ a:link {
         height: 100%;
     }   
         
-        .corousel {
+        .carousel {
             padding-top: 15px;
             display: flex;
             flex-direction: row;
@@ -144,6 +156,10 @@ a:link {
             border: 1px solid white;
             border-radius: 5px;
             scroll-snap-align: start;
+        }
+
+        .carousel__titles {
+            color: white;
         }
 
 /*volver a poner section-corrouserls en el html junto con sus estilos y hacer lo que dice tu amigo */
