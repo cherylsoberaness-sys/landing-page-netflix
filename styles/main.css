@@ -1,0 +1,133 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 8vh 1fr;
+    /*
+    display: flex;
+    flex-direction: column;
+    */
+    margin: 0;
+}
+
+.header {
+    grid-row: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 50px;
+    background-color: black;
+}
+
+
+.header__logo {
+    width: 10%;
+    height: 100%;
+}
+
+.header__logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-fit: center;
+}
+
+.header__nav--primary ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 20px;
+}
+
+a {
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+.header__nav--secondary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;       
+    gap: 25px;                 
+}   
+    svg {
+        color: white;
+    }
+
+.main-page {
+    display: grid;
+    grid-row: 2;
+    grid-template-rows: auto 2fr;
+    padding-left: 50px;
+    background: 
+        url('/styles/components/Pantheon2.png');
+    background-size: cover;
+    background-position: center;
+}
+    .hero {
+        grid-row: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        text-align: right;
+        gap: 15px;
+        margin-top: 15px;
+        padding-right: 50px;
+    }
+
+    .hero__text {
+        max-width: 500px;
+        color: rgba(255,255,255,0.85);
+        line-height: 1;
+    }
+
+    .hero__title { 
+        margin: 0;
+        font-size: clamp(2.5rem, 7vh, 6rem);
+        color: white;  
+        font-weight: bold;
+        line-height: 1;
+    }
+
+    .hero__action {
+        display: flex;
+        flex-direction: row;
+        width: 450px;
+        height: 50px;
+        gap: 15px;
+    }
+        .hero__button {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+        
+        .corousel {
+            padding-top: 15px;
+            display: flex;
+            flex-direction: row;
+            overflow-x: auto;
+            gap: 15px;
+        }
+
+        .film {
+            flex: 0 0 auto;
+            width: 300px;
+            height: 180px;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+
+/*volver a poner section-corrouserls en el html junto con sus estilos y hacer lo que dice tu amigo */
