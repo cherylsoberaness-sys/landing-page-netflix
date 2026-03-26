@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: "Montserrat";
-    src: url(/styles/components/fonts/Montserrat/Montserrat-VariableFont_wght.ttf)
+    font-family: "Rubik";
+    src: url(/styles/components/fonts/static/Rubik-Light.ttf)
 }
 
 * {
@@ -17,7 +17,7 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-rows: 8vh auto;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rubik', sans-serif;
     /*
     display: flex;
     flex-direction: column;
@@ -57,6 +57,7 @@ body {
 
 a {
     color: white;
+    font-family: 'Rubik';
 }
 
 a:link {
@@ -93,15 +94,15 @@ a:link {
         justify-content: center;
         align-items: flex-end;
         text-align: right;
-        gap: 15px;
-        margin-top: 15px;
         padding-right: 50px;
     }
 
     .hero__text {
         max-width: 500px;
         color: rgba(255,255,255,0.85);
-        line-height: 1;
+        font-family: 'Rubik';
+        line-height: 1.5;
+        margin: 0;
     }
 
     .hero__title { 
@@ -112,6 +113,7 @@ a:link {
         color: white;  
         letter-spacing: 4px;
         line-height: 0.9;
+        margin-top: 20px;
     }
 
     .hero__action {
@@ -121,6 +123,7 @@ a:link {
         max-width: 450px;
         height: 50px;
         gap: 15px;
+        margin-top: 15px;
     }
         .hero__button {
             width: 100%;
@@ -160,6 +163,8 @@ a:link {
 
         .carousel__titles {
             color: white;
+            font-family: 'BebasNeue', sans-serif;
+            margin: 0;
         }
 
 /*volver a poner section-corrouserls en el html junto con sus estilos y hacer lo que dice tu amigo */
