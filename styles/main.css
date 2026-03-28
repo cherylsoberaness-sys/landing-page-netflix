@@ -16,7 +16,7 @@ body {
     width: 100%;
     min-height: 100vh;
     display: grid;
-    grid-template-rows: 8vh auto 8vh;
+    grid-template-rows: 8vh auto auto;
     font-family: 'Rubik', sans-serif;
     background: 
         url('/styles/components/pantheon3.png') center/cover no-repeat;
@@ -40,7 +40,9 @@ body {
 
 .header__logo {
     width: 10%;
+    max-width: 150px;
     height: 100%;
+    max-height: 50px;
 }
 
 .header__logo img {
@@ -206,6 +208,12 @@ svg {
 
 .footer {
     grid-row: 3;
+    height: 100%;
+}
+
+.footer__information {
+    display: flex;
+    flex-direction: column;
 }
 
 .footer__information ul {
@@ -223,6 +231,7 @@ svg {
 .footer p {
     padding-left: 50px;
     color: rgb(156, 156, 156);
+    margin: 0;
 }
 
 @keyframes fadeUp {
