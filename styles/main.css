@@ -16,8 +16,10 @@ body {
     width: 100%;
     min-height: 100vh;
     display: grid;
-    grid-template-rows: 8vh auto;
+    grid-template-rows: 8vh auto 8vh;
     font-family: 'Rubik', sans-serif;
+    background: 
+        url('/styles/components/pantheon3.png') center/cover no-repeat;
     /*
     display: flex;
     flex-direction: column;
@@ -72,134 +74,155 @@ a:link {
     margin-left: auto;       
     gap: 25px;                 
 }   
-    svg {
-        color: white;
-    }
+svg {
+    color: white;
+}
 
 .main-page {
     grid-row: 2;
     display: grid;
     grid-template-rows: auto auto;
-    background: 
-        url('/styles/components/pantheon3.png') center/cover no-repeat;
     width: 100%;
     min-height: 100%
 }
-    .hero {
-        grid-row: 1;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        text-align: start;
-        padding: 0 50px 0 50px;
-    }
 
-    .hero__text {
-        max-width: 500px;
-        color: rgba(255,255,255,0.85);
-        font-family: 'Rubik';
-        line-height: 1.5;
-        margin: 0;
-    }
+.hero {
+    grid-row: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: start;
+    padding: 0 50px 0 50px;
+}
 
-    .hero__title { 
-        margin: 0;
-        font-family: 'BebasNeue', sans-serif;
-        font-size: clamp(4rem, 12vw, 12rem);
-        width: 100%;
-        color: white;  
-        letter-spacing: 4px;
-        line-height: 0.9;
-        margin-top: 20px;
-    }
+.hero__text {
+    max-width: 500px;
+    color: rgba(255,255,255,0.85);
+    font-family: 'Rubik';
+    line-height: 1.5;
+    margin: 0;
+}
 
-    .hero__action {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        max-width: 500px;
-        height: 47px;
-        gap: 15px;
-        margin: 15px 0 20PX 0;
-    }
-        .hero__button {
-            width: 100%;
-            height: 100%;
-            font-family: 'Rubik';
-            font-weight: bold;
-            font-size: medium;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+.hero__title { 
+    margin: 0;
+    font-family: 'BebasNeue', sans-serif;
+    font-size: clamp(4rem, 12vw, 12rem);
+    width: 100%;
+    color: white;  
+    letter-spacing: 4px;
+    line-height: 0.9;
+    margin-top: 20px;
+}
 
-        .hero__button--play{
-            background-color: rgb(244, 246, 248);
-        } 
-            .hero__button--play:hover {
-                background-color: rgb(210, 210, 210);
-            }
+.hero__action {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 500px;
+    height: 47px;
+    gap: 15px;
+    margin: 15px 0 20PX 0;
+}
+.hero__button {
+    width: 100%;
+    height: 100%;
+    font-family: 'Rubik';
+    font-weight: bold;
+    font-size: medium;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-        .hero__button--information {
-            background-color: rgb(165, 165, 165);
-            color: white;
-        }
-            .hero__button--information:hover {
-                background-color: rgba(255, 255, 255, 0.1);
-            }
+.hero__button--play{
+    background-color: rgb(244, 246, 248);
+} 
+.hero__button--play:hover {
+    background-color: rgb(210, 210, 210);
+}
 
-    .section-carousels {
-        grid-row: 2;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        overflow-x: hidden;
-        padding: 0 0 10px 50px;
-        height: 100%;
-    }   
-        
-        .carousel {
-            padding-top: 15px;
-            display: flex;
-            flex-direction: row;
-            flex: 0 0 auto;
-            overflow-x: auto;
-            gap: 8px;
-            scroll-snap-type: x mandatory;
-        }
+.hero__button--information {
+    background-color: rgb(165, 165, 165);
+    color: white;
+}
+.hero__button--information:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
 
-        .carousel__titles {
-            color: white;
-            font-family: 'BebasNeue', sans-serif;
-            margin: 0;
-        }
+.section-carousels {
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-x: hidden;
+    padding: 0 0 10px 50px;
+    height: 100%;
+}   
+
+.carousel {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 auto;
+    overflow-x: auto;
+    gap: 8px;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel__titles {
+    color: white;
+    font-family: 'BebasNeue', sans-serif;
+    margin: 0;
+}
 
 
-        .film {
-            flex: 0 0 auto;
-            width: 250px;
-            height: 160px;
-            scroll-snap-align: start;
-        }
+.film {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 160px;
+    scroll-snap-align: start;
+}
 
-        .film img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: top;
-            border-radius: 3px;
-            transition: transform 1s ease;
-            cursor: pointer;
-        }
+.film img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 3px;
+    transition: transform 1s ease;
+    cursor: pointer;
+}
 
-       
-        
-        .film:hover img {
-            transform: scale(1.1);
-            object-fit: contain;
-        }
+
+
+.film:hover img {
+    transform: scale(1.1);
+    object-fit: contain;
+}
+
+.footer {
+    grid-row: 3;
+}
+
+.footer__information ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-left: 50px;
+    gap: 15px;
+}
+
+.footer__information--links {
+    color: rgb(156, 156, 156);
+}
+
+.footer p {
+    padding-left: 50px;
+    color: rgb(156, 156, 156);
+}
+
 
 
 
