@@ -19,7 +19,7 @@ body {
     grid-template-rows: 8vh 1fr auto;
     font-family: 'Rubik', sans-serif;
     background: 
-        url('../images/pantheon3.png');
+        url('../images/pantheon3web.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
