@@ -16,7 +16,7 @@ body {
     width: 100%;
     min-height: 100dvh;
     display: grid;
-    grid-template-rows: 8vh 1fr auto;
+    grid-template-rows: auto 1fr auto;
     font-family: 'Rubik', sans-serif;
     background: 
         url('../images/pantheon3web.webp');
@@ -29,6 +29,7 @@ body {
 .header {
     grid-row: 1;
     width: 100%;
+    min-height: 70px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -262,7 +263,7 @@ svg {
     }
 
     .header__nav--secondary {
-        margin-left: 135px;
+        margin-left: auto;
         gap: 15px;
     }
 
