@@ -1,4 +1,4 @@
-# Netflix home landing page 
+# Netflix Home landing page 
 
 ## Technical Decisions & Features
 
