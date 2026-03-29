@@ -25,6 +25,16 @@
 * **Methodology:**
   The codebase follows the **BEM (Block, Element, Modifier)** methodology to ensure scalable and organized CSS.
 
+## 📚 What I Learned
+
+* Initially, I attempted to build the main layout using **Flexbox**, but this approach led me to rely on hardcoded dimensions to control the structure. This made the layout less flexible and harder to maintain.
+
+* Switching to **CSS Grid** allowed for better control over the overall layout, making it easier to define the structure without depending on fixed values.
+
+* I learned that **Flexbox works best for internal content alignment**, while **Grid is more effective for defining the main layout**.
+* 
+* I also started thinking in terms of **layout as a system of boxes**, which made it easier to organize and position elements in a more structured and predictable way.
+
 ## 🚧 Future Improvements
 
 * Refine the current use of **media queries**, as the implementation is currently focused on a single mobile resolution.
