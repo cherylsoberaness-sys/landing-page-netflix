@@ -1,11 +1,11 @@
 @font-face {
     font-family: "BebasNeue";
-    src: url(/styles/components/fonts/Bebas_Neue/BebasNeue-Regular.ttf)
+    src: url('./components/fonts/Bebas_Neue/BebasNeue-Regular.ttf')
 }
 
 @font-face {
     font-family: "Rubik";
-    src: url(/styles/components/fonts/static/Rubik-Light.ttf)
+    src: url('./components/fonts/static/Rubik-Light.ttf')
 }
 
 * {
@@ -19,7 +19,7 @@ body {
     grid-template-rows: 8vh 1fr auto;
     font-family: 'Rubik', sans-serif;
     background: 
-        url('/styles/components/pantheon3.png');
+        url('../images/pantheon3.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
