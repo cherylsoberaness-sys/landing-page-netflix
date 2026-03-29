@@ -32,7 +32,7 @@
 * Switching to **CSS Grid** allowed for better control over the overall layout, making it easier to define the structure without depending on fixed values.
 
 * I learned that **Flexbox works best for internal content alignment**, while **Grid is more effective for defining the main layout**.
-* 
+ 
 * I also started thinking in terms of **layout as a system of boxes**, which made it easier to organize and position elements in a more structured and predictable way.
 
 ## 🚧 Future Improvements
