@@ -28,6 +28,8 @@
 ## 🚧 Future Improvements
 
 * Refine the current use of **media queries**, as the implementation is currently focused on a single mobile resolution.
+  
+* Enhance carousel interactivity by incorporating JavaScript, allowing for smoother navigation, better control, and an improved user experience.
 
 * Enhance UI elements by adding **icons to buttons** (e.g., play and info icons) to improve usability and visual clarity.
 
