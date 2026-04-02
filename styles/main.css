@@ -170,6 +170,7 @@ svg {
     flex-direction: row;
     flex: 0 0 auto;
     overflow-x: auto;
+    overflow-y: hidden;
     gap: 8px;
     scroll-snap-type: x mandatory;
 }
